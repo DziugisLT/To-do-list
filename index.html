@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            font-family: 'Segoe UI', sans-serif;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            background-color: rgb(253, 232, 204);
+        }
+
+        .header-text{
+            font-size: 3.2rem;
+            margin-bottom: 3.2rem;
+            text-align: center;
+        }
+
+        .list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+
+        .done-list{
+            border-top: 1px solid black;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 2.4rem;
+        }
+
+        .item{
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem
+        }
+
+        .input-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 2.4rem;
+            width: 50%;
+        }
+
+        .input-button{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header-text">TO-DO LIST</h1>
+        <div class="input-box">
+            <input class="input-field">
+            <button class="input-button">&darr;</button>
+        </div>
+        <ul class="list">
+            <li class="item"><input class="item-input" type="checkbox"><p>Item 1</p></li>
+            <li class="item"><input class="item-input" type="checkbox"><p>Item 2</p></li>
+            <li class="item"><input class="item-input" type="checkbox"><p>Item 3</p></li>
+            <li class="item"><input class="item-input" type="checkbox"><p>Item 4</p></li>
+            <li class="item"><input class="item-input" type="checkbox"><p>Item 5</p></li>
+        </ul>
+        <ul class="done-list">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
